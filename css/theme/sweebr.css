@@ -1,0 +1,363 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+/**
+ * A simple theme for reveal.js presentations, similar 
+ * to the default theme. The accent color is darkblue.
+ * 
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  z-index: 100;
+  height: 59px;
+}
+
+header .logo {
+  float: left;
+  width: 216px;
+  display: block;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  margin: 9px 0 0 30px;
+  position: relative;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header .logo .name {
+  float: left;
+  font-size: 27px;
+  margin-top: -1px;
+  display: block;
+  color: #05567a;
+  width: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: normal;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+header .logo .slogan {
+  display: block;
+  float: left;
+  color: #05567a;
+  font-size: 13px;
+  margin-top: -39px;
+  margin-left: 0;
+  line-height: 59px;
+  text-decoration: none;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 0;
+}
+
+.reveal {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  color: black;
+}
+
+.reveal .slides {
+  left: 0;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.reveal section {
+  height: 100%;
+  left: 0 !important;
+  top: 0 !important;
+  padding-top: 80px !important;
+}
+
+.reveal section:first-child {
+  padding: 80px 0 0;
+  position: relative;
+  background-color: #19689e;
+  background-image: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 100, color-stop(0%, #19689e), color-stop(100%, #5ca9d8));
+  background-image: -webkit-radial-gradient(0% 0%, #19689e,#5ca9d8);
+  background-image: -moz-radial-gradient(0% 0%, #19689e,#5ca9d8);
+  background-image: -o-radial-gradient(0% 0%, #19689e,#5ca9d8);
+  background-image: radial-gradient(0% 0%, #19689e,#5ca9d8);
+  overflow: hidden;
+}
+
+.reveal section:first-child h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 120px;
+  padding: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3)
+}
+
+.reveal section:first-child h3 {
+  padding: 0;
+  font-size: 50px;
+  font-family: "Quicksand",sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+  margin: 25px 0 35px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3)
+  text-align: center;
+}
+
+.reveal section:first-child p small {
+  color: white;
+  font-weight: normal;
+}
+
+.reveal section:first-child p small a {
+  color: rgb(209, 209, 209);
+}
+
+#ipad-hands {
+  background: transparent url( 'https://www.sweebr.com/skin/1/assets/img/web/ipad-hands.png' ) no-repeat 0 0;
+  position: absolute;
+  width: 685px;
+  height: 472px;
+  bottom: 135px;
+  z-index: 0;
+  opacity: 1;
+  left: 50%;
+  margin-left: -342px;
+}
+
+.reveal section.green {
+  background-color: #83cf6c;
+}
+
+.reveal section.green ul {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.reveal section.green ul li {
+  width: 33.33333%;
+  padding: 0 12px 12px;
+  padding: 0 8px 8px;
+  display: block;
+  height: auto;
+  float: left;
+  clear: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.reveal section.green ul li .img {
+  height: 186px;
+  display: block;
+  display: box;
+  display: -webkit-box;
+  display: -o-box;
+  display: -ms-box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
+
+.reveal section.green ul li .img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.reveal section.green ul li h3 {
+  font-size: 29px;
+  line-height: 43px;
+  letter-spacing: -2px;
+  margin: 25px 0 0;
+  text-align: center;
+  color: white;
+  height: 80px;
+}
+
+.reveal section.green ul li p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0;
+  padding: 0 15px;
+  margin: 25px 0 0;
+  color: #3a820c;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: black;
+  font-family: "Quicksand", Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none;
+}
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #05567a;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+.reveal a:not(.image):hover {
+  color: #0000f1;
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #05567a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #05567a;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #05567a;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #05567a;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #05567a;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: rgb(3, 41, 58);
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: rgb(3, 41, 58);
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: rgb(3, 41, 58);
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: rgb(3, 41, 58);
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  background: #05567a;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
